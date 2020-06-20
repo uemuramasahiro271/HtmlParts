@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.slider {
+    flex: 1;
+}
+
+.slider img {
+    height: 70vh;
+}
+
+.bx-wrapper {
+    /*  -moz-box-shadow: 0 0 5px #ccc;
+      -webkit-box-shadow: 0 0 5px #ccc;
+      box-shadow: 0 0 5px #ccc;*/
+      max-height:70vh!important;
+      margin:0 auto;
+}
