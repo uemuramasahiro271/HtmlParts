@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="stylesheet" type="text/css" href="css/drag.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <title>Drag</title>
+
+    <script>
+        $(function() {
+            $("#handcuffs_icon").draggable({
+                // ドラッグ開始時に呼ばれる
+		        start : function (event , ui){
+
+                },
+                // ドラッグ中に呼ばれる
+                drag : function() {
+
+                },
+                // ドラッグ終了時に呼ばれる
+                stop : function() {
+
+                }
+            });
+            $("#person_icon").droppable({
+                over:function(event, ui) {
+                    $("#title")
+                        .html("今だ!!");
+                },
+                out:function(event, ui) {
+                    $("#title")
+                        .html("手錠をドラッグして、犯人を捕まえてください。");
+                },
+                drop:function(event, ui) {
+                    $("#title")
+                        .html("逮捕!!");
+                }
+            });
+
+            // 横にしか動かない
+            $("#block1").draggable({ axis: "x" });
+            // 縦にしか動かない
+            $("#block2").draggable({ axis: "y" });
+            // 
+            $("#block3").draggable({ containment: "#container" });
+        });
+    </script>
+</head>
+<body>
+    <h1 id="title">手錠をドラッグして、犯人を捕まえてください。</h1>
+    <div id="handcuffs_icon_area">
+        <img id="handcuffs_icon" src="resource/handcuffs_icon.png">
+    </div>
+    <div id="person_icon_area">
+        <img id="person_icon" src="resource/person_icon.png" alt="">
+    </div>
+    <div class="explanation">横にだけ移動できます。</div>
+    <div id="block1"></div>
+    <div class="explanation">縦にだけ移動できます。</div>
+    <div id="block2"></div>
+    <div class="explanation">枠内だけ移動できます。</div>
+    <div id="container">
+        <div id="block3"></div>
+    </div>
+</body>
+</html>

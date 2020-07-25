@@ -1,0 +1,45 @@
+#handcuffs_icon {
+    width: 100px;
+    height: 100px;
+}
+
+#person_icon {
+    width: 100px;
+    height: 100px;
+}
+
+#handcuffs_icon_area {
+    float: left;
+}
+
+#person_icon_area {
+    text-align: right;
+}
+
+#block1 {
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+}
+
+#block2 {
+    width: 150px;
+    height: 150px;
+    background-color: chartreuse;
+}
+
+#container {
+    width: 600px;
+    height: 200px;
+    outline: solid 2px;
+}
+
+#block3 {
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+}
+
+.explanation {
+    margin-top: 40px;
+}
