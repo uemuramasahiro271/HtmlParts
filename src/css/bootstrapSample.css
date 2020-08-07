@@ -1,0 +1,18 @@
+.skyblue {
+  background: skyblue;
+}
+
+.pink {
+  background: pink;
+}
+
+.orange {
+  background: orange;
+}
+
+.base, .skyblue, .pink, .orange {
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  outline: solid 1px;
+}

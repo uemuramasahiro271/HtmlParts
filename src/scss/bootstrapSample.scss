@@ -1,0 +1,21 @@
+.skyblue{
+    @extend .base;
+    background: skyblue;
+}
+
+.pink{
+    @extend .base;
+    background: pink;
+}
+
+.orange {
+    @extend .base;
+    background: orange;
+}
+
+.base {
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    outline: solid 1px;
+}
